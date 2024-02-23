@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title> Min Finder.. </title>
+		<style>
+			* {font-size:40px; font-family:Times New Roman;}
+		</style>
+
+		<script>
+			function compute()
+			{
+				event.preventDefault()
+				let c = ["red","green","blue","brown","pink","purple","violet"]
+				let r = parseInt(Math.random() * c.length);
+				document.body.style.background = c[r];
+			}
+			
+		</script>
+	</head>
+
+	<body>
+	<center>
+		<h1> Min Finder....</h1>
+		<form onsubmit="compute()">
+			<input type="submit" value="Color Me" class="btn">
+		
+		</form>
+		<h2 id="msg"/>
+	</center>
+	</body>
+</html>
